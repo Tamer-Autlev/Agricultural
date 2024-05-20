@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* , ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.Product-box{
+  @apply w-[80%] lg:h-[280px] lg:w-[370px] bg-cover bg-center mt-[10%] relative cursor-pointer transition duration-300 ease-in
+}
+.Product-boxImg{
+  @apply w-full h-full rounded-md group-hover:blur-[1px] transition duration-300 ease-in
+}
+.ProductBox-text{
+ @apply text-2xl text-primary-green font-bold group-hover:text-yellow-500 transition duration-100 ease-in
+}
+.ProductBox-textContainer{
+  @apply absolute flex items-center justify-center rounded-md bg-white z-30 h-[60px] lg:h-[100px] w-[90%] lg:w-[80%] bottom-[-10%] lg:bottom-[-15%] left-[5%] lg:left-[10%] group-hover:shadow-md transition duration-100 ease-in 
+}
+.primary-px{
+  @apply px-6 xl:px-[15%] 
+}
+.primary-transition{
+  @apply transition-all duration-200 ease-in-out
+}
+.section-title{
+  @apply text-xl md:text-3xl text-primary-yellow font-extrabold font-Roboto
+}
+.contact-title {
+  @apply md:text-[18px] text-[16px] lg:text-[20px] font-bold;
+}
+.contact-text {
+  @apply text-[14px] lg:text-[18px] font-semibold text-gray-500;
+}
+.contact-input{
+  @apply  bg-primary-offWhite p-3 rounded-lg border-none focus:outline-none
+}
+.footer-list-title {
+  @apply text-primary-yellow md:text-[20px] text-[18px] font-bold pb-8;
+}
+.footer-list {
+  @apply md:text-[20px] text-[18px] font-bold cursor-pointer text-white hover:text-primary-yellow transition-all ease-out duration-200;
+}
+.btn{
+  @apply border-2 border-primary-yellow rounded-md hover:bg-primary-yellow z-30 text-white font-bold
+}
+.rtl{
+  direction: rtl;
+}
+.img-flip{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.navbar-link{
+  @apply text-xl font-Roboto text-white font-bold
+}
+.text{
+  
+  font-weight: 700;
+  background-image: url(./assets/New/text-bg-1.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hero-br br {
+  display: none;
+}
+.photo:not(:first-child) {
+  opacity: 0;
+  scale: 0.5;
+}
+.hero-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-family: cursive;
+  font-size: inherit;
+}
+
+.hero-btn.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+.hero-btn.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #f3c25a;
+  border-radius: 1.625rem;
+}
+
+.hero-btn.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.hero-btn.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.1rem;
+  background: none;
+}
+
+.hero-btn.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.hero-btn.learn-more .hero-button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 900;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-btn:hover .circle {
+  width: 100%;
+}
+
+.hero-btn:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.hero-btn:hover .hero-button-text {
+  color: #fff;
+}
+
+.form-btn {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 25%;
+
+  height: 50px;
+  background-color: #f3c25a;
+
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+
+}
+.form-btn svg {
+    position: absolute;
+    color: white;
+    font-size: 1.3rem;
+    fill: transparent;
+    transition: 0.4s;
+  }
+ 
+ .form-btn  span {
+    position: absolute;
+    font-weight: 500;
+    color: white;
+    fill: transparent;
+    transition: 0.4s;
+  }
+
+.form-btn:hover {
+  background-color: #305946;
+}
+.active-btn {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  width: 50px;
+  border-radius: 50px;
+  background-color: transparent;
+  background: none;
+  border-left: 2px solid #f3c25a;
+  border-bottom: 2px solid #f3c25a;
+  animation: spin 1.5s 300ms forwards;
+}
+.active-btn:hover{
+  background: none;
+  background-color: transparent;
+
+}
+.active-span {
+  color: transparent;
+  
+}
+.active-span {
+    background: none;
+
+}
+
+.active-svg {
+  animation: check 400ms 1800ms forwards;
+}
+.auth {
+  margin-top: 2rem;
+}
+
+.disable {
+  opacity: 0;
+}
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #f3c25a;
+  }
+  100% {
+    transform: rotate(1080deg);
+    border: 2px solid #f3c25a;
+  }
+}
+
+@keyframes check {
+  to {
+    fill: #f3c25a;
+  }
+}
+
+@keyframes circle {
+  to {
+    border: 2px solid #f3c25a;
+  }
+}
