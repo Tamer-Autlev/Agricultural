@@ -53,7 +53,7 @@ const ContactUs = ({lang}) => {
         <div className="w-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           <HoverCard
             title={`${lang ? "Address" : "العنوان"}`}
-            subtitle="Russia"
+            subtitle="Russia, Adygea Republic, Maykop"
             href="#"
             Icon={FaLocationDot}
           />
