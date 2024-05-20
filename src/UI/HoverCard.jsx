@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { useContext } from "react";
 import { ContextLang } from "../context/ContexLang";
-const Card = ({ title, subtitle, Icon, href, socialLinks,bg }) => {
+const Card = ({ title, subtitle, Icon, to, socialLinks,bg }) => {
   const {lang} =useContext(ContextLang)
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
       className={`bg-${bg} w-full ${lang?``:`rtl`} flex flex-col justify-center gap-2 p-4 rounded border-[1px] hover:border-none   relative h-[200px] overflow-hidden group `}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#4a7f64] to-primary-green translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
@@ -29,7 +29,7 @@ const Card = ({ title, subtitle, Icon, href, socialLinks,bg }) => {
           </Link>
         </div>
       )}
-    </a>
+    </Link>
   );
 };
 export default Card
