@@ -43,7 +43,7 @@ const ContactUs = ({lang}) => {
         </div>
       </div>
       <div
-        className={`w-full md:w-[100%] lg:w-[50%] h-full ${
+        className={`w-full md:w-[100%] lg:w-[50%] md:mt-[-3%] h-full ${
           lang ? `lg:ml-[7%]` : `lg:mr-[7%]`
         }  flex flex-col gap-9 z-30`}
       >
