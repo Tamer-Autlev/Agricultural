@@ -99,14 +99,14 @@ const Navbar = ({ setLang, lang }) => {
               <img src={logo} className="w-[100px] mb-7" />
 
               <Link
-                to="/about-us"
+                to="/"
                 className="navbar-link"
                 onClick={() => setToggle(!toggle)}
               >
                 {`${lang ? `Home` : `الرئيسية`}`}
               </Link>
               <Link
-                to="/services"
+                to="/about-us"
                 className="navbar-link "
                 onClick={() => setToggle(!toggle)}
               >
@@ -119,13 +119,7 @@ const Navbar = ({ setLang, lang }) => {
               >
                 {`${lang ? `Contact` : `تواصل معنا`}`}
               </Link>
-              <div className="pt-[30px]">
-                <div className="flex flex-col gap-2 mb-[25px]"></div>
-                <Link
-                  to="/contact-us"
-                  className="w-full text-[25px] text-white pr-[20px] mb-[15px] lg:mb-0 "
-                ></Link>
-              </div>
+            
               <DropDown setLang={setLang} lang={lang} />
             </div>
             <div className=" absolute bottom-[5%] left-[50%] flex gap-4 text-white translate-x-[-50%]">
