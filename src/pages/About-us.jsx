@@ -21,7 +21,7 @@ const AboutUs = () => {
         <h1 className='text-4xl md:text-6xl text-white z-40 font-Roboto absolute top-[50%] left-[50%] translate-x-[-50%]'>{lang?`About Us`:`من نحن`}</h1>
       </div>
       <About lang={lang} />
-      <div className="w-full bg-primary-green h-[70vh] relative mt-[50px] flex items-center justify-center ">
+      <div className="w-full bg-primary-green h-full lg:h-[70vh] relative mt-[50px] flex items-center justify-center ">
         <div className="absolute w-full h-full bottom-0">
           <img
             src={bgImg}
