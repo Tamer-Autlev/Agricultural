@@ -58,14 +58,17 @@ const ContactUs = ({lang}) => {
             Icon={FaLocationDot}
           />
           <HoverCard
+            to="mailto:info@harvest-gp.com"
             title={`${lang ? `Email` : `البريد الالكتروني`}`}
             subtitle="info@harvest-gp.com"
             href="#"
             Icon={FiMail}
           />
+
           <HoverCard
+            to="tel: +79957996190"
             title={`${lang ? `Contact` : `الهاتف`}`}
-            subtitle="+79284671704"
+            subtitle="+79957996190"
             href="#"
             Icon={FaPhoneAlt}
           />
