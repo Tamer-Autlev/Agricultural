@@ -43,7 +43,7 @@ const Footer = ({lang}) => {
             lang ? `Contacts` : `جهات التواصل`
           }`}</li>
           <li className="footer-list pb-3 ">
-            <Link to="mailto:Rami@blacksmith-uae.com">
+            <Link to="mailto:info@harvest-gp.com">
               {`${
                 lang
                   ? `Email: info@harvest-gp.com`
@@ -52,8 +52,8 @@ const Footer = ({lang}) => {
             </Link>
           </li>
           <li className="footer-list">
-            <Link to="tel: 0529934946">{`${
-              lang ? `Phone: 0529934946` : `الهاتف: 58489498`
+            <Link to="tel: +79957996190">{`${
+              lang ? `Phone: +79957996190` : `الهاتف: +79957996190`
             }`}</Link>
           </li>
         </ul>
