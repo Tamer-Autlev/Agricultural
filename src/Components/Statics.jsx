@@ -8,7 +8,7 @@ import wheat from "../assets/New/28.png";
 const Statics = ({lang}) => {
   const [counter,setCounter]=useState(false)
   return (
-    <div className="relatiev flex flex-col justify-center my-[5%] lg:my-[10%] primary-px items-center gap-12 relative after:hidden after:absolute after:bg-white-papper after:z-30 after:w-full after:rotate-180 after:left-0 after:top-[-1%] after:h-[16px]">
+    <div className="relatiev flex flex-col justify-center mt-[5%] mb-[15%] lg:my-[10%] primary-px items-center gap-12 relative after:hidden after:absolute after:bg-white-papper after:z-30 after:w-full after:rotate-180 after:left-0 after:top-[-1%] after:h-[16px]">
       <h1 className="text text-[25vw] lg:text-[13vw] lg:mt-[-150px]">{`${
         lang ? `Statics` : `إحصائيات `
       }`}</h1>
