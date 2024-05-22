@@ -56,12 +56,15 @@ const ContactUs = ({lang}) => {
             subtitle="Russia, Adygea Republic, Maykop"
             href="#"
             Icon={FaLocationDot}
+            bg={`white`}
           />
           <HoverCard
             to="mailto:info@harvest-gp.com"
             title={`${lang ? `Email` : `البريد الالكتروني`}`}
             subtitle="info@harvest-gp.com"
             href="#"
+            bg={`white`}
+
             Icon={FiMail}
           />
 
@@ -71,6 +74,8 @@ const ContactUs = ({lang}) => {
             subtitle="+79957996190"
             href="#"
             Icon={FaPhoneAlt}
+            bg={`white`}
+
           />
           <HoverCard
             title={`${lang ? `Social` : "جهات التواصل الاجتماعي"}`}
@@ -78,6 +83,8 @@ const ContactUs = ({lang}) => {
             href="#"
             socialLinks={true}
             Icon={IoShareSocial}
+            bg={`white`}
+
           />
         </div>
       </div>
