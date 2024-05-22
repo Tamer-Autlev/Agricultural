@@ -10,6 +10,7 @@ import { ContextLang } from '../context/ContexLang';
 import AboutUsPage from '../Components/AboutUsPage';
 import ContactUs from '../Components/ContactUs';
 import Footer from '../Components/Footer';
+import Partner from '../Components/Partner';
 const AboutUs = () => {
   
    const {lang,setLang} = useContext(ContextLang);
@@ -31,7 +32,7 @@ const AboutUs = () => {
 
         <AboutUsPage />
       </div>
-      {/* <Advantegs lang={lang} /> */}
+      <Partner lang={lang}/>
       <ContactUs lang={lang} />
       <Footer lang={lang} />
     </section>
