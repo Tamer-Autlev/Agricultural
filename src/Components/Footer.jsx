@@ -83,14 +83,7 @@ const Footer = ({lang}) => {
       </div>
       <div className=" mb-5 text-white z-30 flex justify-center items-end self-center ">
         <h1>
-          &copy; Copyright 2023 {` `}
-          <Link
-            target="_blank"
-            to="https://tamer-autlev-portfolio.com/"
-            className="hover:text-primary-yellow transition-all ease-out duration-200"
-          >
-            Tamer-Mohamad
-          </Link>
+          &copy; Copyright 2023
           .All Rights Reserved
         </h1>
       </div>
