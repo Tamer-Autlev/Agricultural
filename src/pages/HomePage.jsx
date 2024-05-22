@@ -23,7 +23,6 @@ const HomePage = () => {
       <Advantegs lang={lang} />
       <Services lang={lang} />
       <Statics lang={lang} />
-      <Partner lang={lang} />
       <ContactUs lang={lang} />
       <Footer lang={lang} />
     </>
