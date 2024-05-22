@@ -83,8 +83,7 @@ const Footer = ({lang}) => {
       </div>
       <div className=" mb-5 text-white z-30 flex justify-center items-end self-center ">
         <h1>
-          &copy; Copyright 2023
-          .All Rights Reserved
+          &copy; Copyright 2023. All Rights Reserved
         </h1>
       </div>
     </footer>
