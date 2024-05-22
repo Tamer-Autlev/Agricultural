@@ -1,5 +1,5 @@
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
-import wheat from '../assets/New/28.png'
+import wheat from '../assets/New/hero_one-slider-3.jpg'
 import bgImg from '../assets/New/text-bg-1.jpg'
 import Form from './Form'
 import { Link } from "react-router-dom";
@@ -23,8 +23,8 @@ const ContactUs = ({lang}) => {
         <img src={bgImg} className="object-cover h-full " />
       </div> */}
       <div
-        style={{ backgroundImage: `url(${bgImg})` }}
-        className={`md:w-[100%] h-[80vh] lg:w-[50%] w-full bg-cover flex items-center justify-center `}
+        style={{ backgroundImage: `url(${wheat})` }}
+        className={`relative md:w-[100%] h-[80vh] lg:w-[50%] rounded-lg after:rounded-lg w-full bg-cover flex after:bg-black items-center justify-center  after:absolute after:left-0 after:top-0 after:w-full after:opacity-10 after:h-full `}
       >
         <div
           className={`flex flex-col  w-[90%] bg-white gap-5 z-50  rounded-lg  ${
