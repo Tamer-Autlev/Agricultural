@@ -15,13 +15,7 @@ const ContactUs = ({lang}) => {
         lang ? "" : "rtl"
       } max-w-[100vw]  relative overflow-hidden flex gap-4 flex-col-reverse lg:flex-row lg:gap-0 items-center justify-center primary-px bg-primary-offWhite py-[7%] before:bg-grey-papper before:rotate-180 before:left-0 before:absolute before:w-full before:top-[-1.5%] before:h-[16px]`}
     >
-      {/* <div
-        className={`absolute ${
-          lang ? `left-[10%]` : `right-[10%]`
-        } w-[40vw] h-[80%] after:bg-black after:opacity-20 after:z-40 after:absolute after:left-0 after:top-0 after:w-[40vw] after:h-full`}
-      >
-        <img src={bgImg} className="object-cover h-full " />
-      </div> */}
+     
       <div
         style={{ backgroundImage: `url(${wheat})` }}
         className={`relative md:w-[100%] h-[80vh] lg:w-[50%] rounded-lg after:rounded-lg w-full bg-cover flex after:bg-black items-center justify-center  after:absolute after:left-0 after:top-0 after:w-full after:opacity-10 after:h-full `}
@@ -35,7 +29,7 @@ const ContactUs = ({lang}) => {
             <h1 className="text-xl text-primary-yellow font-semibold font-Roboto">
               {`${lang ? `Have Questions?` : `لديك سؤال`}`}
             </h1>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-green">
+            <h2 className="text-3xl md:text-4xl font-bold mt-3 text-primary-green">
               {`${lang ? `Send us a Message` : `أرسل لنا رسالة`}`}
             </h2>
             <Form lang={lang} />
