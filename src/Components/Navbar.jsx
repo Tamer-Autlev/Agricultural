@@ -65,7 +65,7 @@ const Navbar = ({ setLang, lang }) => {
           <DropDown setLang={setLang} lang={lang} />
         </div>
         <div
-          className={`lg:hidden mr-[-30px] relative justify-self-end flex flex-col gap-1 items-center justify-center w-[102px] h-full cursor-pointer z-[1000] after:bg-primary-orange-100
+          className={`lg:hidden ${lang?`mr-[-30px]`:`ml-[-30px]`} relative justify-self-end flex flex-col gap-1 items-center justify-center w-[102px] h-full cursor-pointer z-[1000] after:bg-primary-orange-100
         } after:absolute after:inset-0 after:origin-left after:scale-x-0 after:transition-transform ease duration-[0.5s] hover:after:scale-x-100  bg-primary-orange
         }`}
           onClick={() => setToggle(!toggle)}
