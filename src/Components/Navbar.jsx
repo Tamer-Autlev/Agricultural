@@ -26,7 +26,7 @@ const Navbar = ({ setLang, lang }) => {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className={`max-w-[100vw] fixed top-0 z-[80] w-full ${
         hidden ? "bg-transparent" : "bg-primary-green"
-      } py-3 ${lang ? "" : "rtl"}`}
+      } py-2 md:py-3 ${lang ? "" : "rtl"}`}
     >
       <motion.nav
         className={`w-full relative flex justify-between primary-px items-center after:bg-header-papper after:hidden after:rotate-180 after:bg-auto after:bg-center ${
@@ -40,7 +40,7 @@ const Navbar = ({ setLang, lang }) => {
         ></div>
 
         <Link to="/" className="max-md:w-[80px]">
-          <img src={logo} className="w-[80px] m-0 p-0" />
+          <img src={logo} className="w-[50px] md:w-[80px] m-0 p-0" />
         </Link>
         <div className="hidden lg:flex justify-between items-center gap-x-6 text-md text-white font-Roboto ">
           <Link
