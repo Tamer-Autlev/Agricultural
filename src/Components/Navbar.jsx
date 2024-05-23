@@ -88,7 +88,7 @@ const Navbar = ({ setLang, lang }) => {
         </div>
         {toggle && (
           <motion.div
-            initial={{ x: 1000 }}
+            initial={{ x: lang?1000:-1000 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.4 }}
             className={`absolute top-0 flex rtl z-[999] flex-col justify-center itmes-center h-[100svh] ${
