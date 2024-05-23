@@ -171,7 +171,7 @@ const Hero = ({ lang }) => {
       <div
         className={`absolute flex ${
           lang ? `` : `flex-row-reverse`
-        } bottom-0 right-0 bg-primary-yellow h-[60px] w-[150px] cursor-pointer z-40 `}
+        } bottom-0 right-0 bg-primary-yellow w-[100px] md:h-[60px] md:w-[150px] cursor-pointer z-40 `}
       >
         <div
           className="group relative text-white flex items-center justify-center w-full h-full after:bg-[#ffd85a] after:absolute after:inset-0 after:origin-right after:z-0 after:scale-x-0 after:transition-transform ease duration-[0.5s] hover:after:scale-x-100  "
