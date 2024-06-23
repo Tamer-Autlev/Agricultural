@@ -103,7 +103,7 @@ const Hero = ({ lang }) => {
         lang ? "" : "rtl"
       } max-w-[100vw] h-[100svh] overflow-hidden relative after:absolute after:hidden after:bg-white-papper after:z-30 after:w-full after:bottom-0 after:rotate-180 after:h-[16px]`}
     >
-      <div
+      {/* <div
         className={`w-full h-full relative overflow-hidden after:absolute after:z-20 after:h-full after:w-full after:bg-[#1f1e17] after:opacity-[0.2] after:left-0 after:top-0  ${
           toggleImg
             ? "after:transition-transform duration-300 after:opacity-0 ease-in"
@@ -119,6 +119,15 @@ const Hero = ({ lang }) => {
           className={`w-full h-full object-cover 
           }`}
         />
+        
+      </div> */}
+      <div
+        className="flex relative w-full transition-transform ease duration-500 after:absolute after:z-20 after:h-full after:w-full after:bg-[#1f1e17] after:opacity-[0.2] after:left-0 after:top-0   "
+        style={{ transform: `translateX(-${currIndex * 100}%)` }}
+      >
+        {sliderImages.map((i) => (
+          <img key={i.text1} src={i.img} />
+        ))}
       </div>
       <div
         className={`absolute  ${
